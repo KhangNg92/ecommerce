@@ -8,7 +8,7 @@ import CategoryItem from '@/components/atoms/CategoryItem';
 
 const Categories = () => {
   return (
-    <div className='m-auto mb-2 flex w-full max-w-screen-xl flex-col gap-2 px-5 pt-8 md:mb-0 md:gap-3 md:px-40 md:py-20'>
+    <div className='m-auto flex w-full max-w-screen-xl flex-col gap-2 px-5 pt-8 md:gap-3 md:px-40 md:py-20'>
       <div className='flex flex-col flex-wrap gap-2 md:flex-row md:gap-3'>
         <div className='flex-1'>
           <CategoryItem mode='large' title='Living Room' href='/' image={LivingRoom} />
