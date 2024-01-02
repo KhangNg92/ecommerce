@@ -393,3 +393,91 @@ export const HelpIcon = () => (
     />
   </svg>
 );
+
+export const BathroomIcon = () => (
+  <svg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M42 26V32C42 34.1217 41.1571 36.1566 39.6569 37.6569C38.1566 39.1571 36.1217 40 34 40H14C11.8783 40 9.84344 39.1571 8.34315 37.6569C6.84285 36.1566 6 34.1217 6 32V27.2C6 26.8817 6.12643 26.5765 6.35147 26.3515C6.57652 26.1264 6.88174 26 7.2 26H42ZM42 26V14C42 11.8783 41.1571 9.84344 39.6569 8.34315C38.1566 6.84285 36.1217 6 34 6H24M32 40L34 44M16 40L14 44'
+      stroke='#1F2224'
+      strokeWidth='3'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M30.7998 16H17.1998C16.5378 16 16.0078 15.464 16.0798 14.804C16.3718 12.15 17.7258 6 23.9998 6C30.2738 6 31.6278 12.15 31.9198 14.804C31.9918 15.464 31.4618 16 30.7998 16Z'
+      stroke='#1F2224'
+      strokeWidth='3'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+  </svg>
+);
+
+export const DiningRoomIcon = () => (
+  <svg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M6 42V40H30.924V42H6ZM6 35.23V33.23H14.46V30.924H22.46V33.23H30.924V35.23H6ZM36.77 42V29.57C35.826 28.7167 35.026 27.6933 34.37 26.5C33.7127 25.308 33.384 23.9547 33.384 22.44V6H42V22.44C42 23.9547 41.6993 25.31 41.098 26.506C40.498 27.702 39.722 28.7233 38.77 29.57V40H42V42H36.77ZM35.384 16.77H40V8H35.384V16.77Z'
+      fill='#1F2224'
+    />
+  </svg>
+);
+
+export const LoungeIcon = () => (
+  <svg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M44 16V30.006C44 31.106 43.09 32 42.016 32H5.984C5.45722 31.9963 4.95321 31.7847 4.58165 31.4113C4.21009 31.0379 4.00104 30.5328 4 30.006V16M10 32V36M38 32V36M10 11.994C10 10.894 10.9 10 12.014 10H35.986C37.1 10 38 10.906 38 11.994V26H10V11.994Z'
+      stroke='#1F2224'
+      strokeWidth='2.5'
+    />
+  </svg>
+);
+
+export const MoreCategoriesIcon = () => (
+  <svg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M28 38V14M28 38H32M28 38H18M28 14C28 9.58172 24.4183 6 20 6H12C7.58172 6 4 9.58172 4 14V30C4 33.7304 6.55333 36.8645 10.0077 37.7499M28 14H34.4182C35.4344 14 36.4126 14.3868 37.154 15.0819L42.7358 20.3148C43.5424 21.071 44 22.1273 44 23.2329V34C44 36.2091 42.2091 38 40 38M40 38C40 40.2091 38.2091 42 36 42C33.7909 42 32 40.2091 32 38M40 38C40 35.7909 38.2091 34 36 34C33.7909 34 32 35.7909 32 38M18 38C18 40.2091 16.2091 42 14 42C11.7909 42 10 40.2091 10 38C10 37.916 10.0026 37.8326 10.0077 37.7499M18 38C18 35.7909 16.2091 34 14 34C11.8748 34 10.1368 35.6573 10.0077 37.7499'
+      stroke='#1F2224'
+      strokeWidth='2.5'
+    />
+    <path
+      d='M20 16H16'
+      stroke='#1F2224'
+      strokeWidth='2.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M20 24H12'
+      stroke='#1F2224'
+      strokeWidth='2.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+  </svg>
+);
+
+export const ArrowBlackIcon = () => (
+  <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path
+      d='M4.16663 10H15.8333'
+      stroke='#1F2224'
+      strokeWidth='1.25'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M10.8334 15L15.8334 10'
+      stroke='#1F2224'
+      strokeWidth='1.25'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M10.8334 5L15.8334 10'
+      stroke='#1F2224'
+      strokeWidth='1.25'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+  </svg>
+);
