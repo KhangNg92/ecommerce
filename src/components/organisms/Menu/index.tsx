@@ -56,11 +56,10 @@ export const menuList = [
 
 const Menu = () => {
   const pathname = usePathname();
-  console.log('🚀 ~ file: index.tsx:59 ~ Menu ~ pathname:', pathname);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className='flex w-full max-w-screen-xl items-center justify-between px-5 py-4 md:px-40'>
+    <div className='m-auto flex w-full max-w-screen-xl items-center justify-between px-5 py-4 md:px-40'>
       <div className='max-w-28 flex items-center gap-3'>
         <button
           onClick={() => setIsOpenMenu(true)}

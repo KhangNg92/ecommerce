@@ -53,7 +53,7 @@ const offers = [
 
 const Hero = () => {
   return (
-    <div className='relative mb-10 flex h-[630px] w-full max-w-screen-xl flex-col-reverse justify-end gap-8 px-0 md:mb-0 md:h-[749px] md:flex-row md:justify-between md:gap-16 md:px-40'>
+    <div className='relative m-auto mb-10 flex h-[630px] w-full max-w-screen-xl flex-col-reverse justify-end gap-8 overflow-hidden px-0 md:mb-0 md:h-[749px] md:flex-row md:justify-between md:gap-16 md:px-40'>
       <div className='w-full px-5 md:w-2/4 md:px-0'>
         <h2 className='mb-4 max-w-[340px] text-[40px] font-semibold leading-[44px] tracking-[0.4px] text-black md:mb-5 md:max-w-[508px] md:text-6xl md:leading-[72px]'>
           {heroText.title}

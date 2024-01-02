@@ -27,6 +27,7 @@
     "@types/react-slick": "^0.23.13",
     "antd": "^5.9.2",
     "autoprefixer": "10.4.16",
+    "clsx": "^2.0.0",
     "cookies-next": "^4.0.0",
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.10",

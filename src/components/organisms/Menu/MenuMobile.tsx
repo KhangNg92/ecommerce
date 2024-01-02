@@ -9,7 +9,7 @@ import React from 'react';
 import Logo from '@/assets/images/logo.png';
 import { DarkModeIcon, HelpIcon, LightModeIcon } from '@/assets/svg';
 /* eslint import/no-cycle: 0 */
-import { menuList } from '@/components/atoms/Menu';
+import { menuList } from '@/components/organisms/Menu';
 
 interface MenuMobileProps {
   isOpenMenu: boolean;
@@ -18,7 +18,6 @@ interface MenuMobileProps {
 
 const MenuMobile = ({ isOpenMenu, setIsOpenMenu }: MenuMobileProps) => {
   const pathname = usePathname();
-  console.log('🚀 ~ file: MenuMobile.tsx:20 ~ MenuMobile ~ pathname:', pathname);
   const onClose = () => {
     setIsOpenMenu(false);
   };
