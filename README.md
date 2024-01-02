@@ -33,17 +33,6 @@ View the <a href = "https://e-shoes.herokuapp.com/">site</a>
 
 <img src="readmeImages/home_banner.png"/>
 
-- Admin Section (to upload products and customize the information of the store):
-
-<img src="appImage/admin.png"/>
-
-- Checkout Section (paypal API):
-
-<img src="appImage/checkout.png"/>
-
-- Shopping Section (with filter):
-<img src="appImage/filter.png"/>
-
 
 
 ### Steps:
