@@ -1,0 +1,30 @@
+.slick-slide {
+  height: 304px; // ← that must not be ignored
+}
+.custom-dots__root {
+  bottom: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.custom-dots__item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: ease-in-out 0.3s;
+  @apply bg-white
+}
+.slick-active .custom-dots__item  {
+  width: 30px;
+  border-radius: 10px;
+}
+.slick-dots li {
+  width: unset;
+  height: unset;
+  margin: unset;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}

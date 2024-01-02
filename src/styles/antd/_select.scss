@@ -1,0 +1,39 @@
+// // .ant-select-disabled {
+// //   .ant-select-selector {
+// //     @apply bg-bgWhiteGray text-textGray dark:bg-bgGray #{!important};
+// //   }
+
+// //   .ant-select-selection-item {
+// //     @apply bg-bgWhiteGray text-textGray dark:bg-bgGray #{!important};
+// //   }
+// // }
+// // .ant-select-item-option-disabled {
+// //   @apply bg-bgGray text-textGray dark:bg-bgGray #{!important};
+// // }
+
+// // .ant-select-selector {
+// //   @apply dark:bg-bgComponentDark dark:text-white #{!important};
+// // }
+// // .ant-select {
+// //   .ant-select-clear {
+// //     @apply dark:bg-bgComponentDark dark:text-white;
+// //   }
+// // }
+// // .ant-select {
+// //   .ant-select-arrow {
+// //     @apply dark:text-textGray;
+// //   }
+// // }
+// // .ant-select-single.ant-select-open .ant-select-selection-item {
+// //   @apply dark:text-white;
+// // }
+
+// .ant-select-in-form-item {
+//   @apply border-0 border-b border-borderInput border-solid #{!important}
+// }
+// .ant-select-in-form-item:focus, .ant-select-in-form-item:active, .ant-select-in-form-item:visited, .ant-select-in-form-item:focus-visible, .ant-select-in-form-item:focus-within {
+//  @apply shadow-none border-b-2 border-primary border-solid #{!important}
+// }
+// .ant-select-selector {
+//   @apply px-0 #{!important}
+// }

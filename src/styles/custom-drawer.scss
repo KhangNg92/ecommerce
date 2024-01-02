@@ -1,0 +1,17 @@
+.custom-drawer {
+  .ant-drawer-header {
+    padding: 24px;
+  }
+  .ant-drawer-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ant-drawer-title {
+    flex-grow: 0;
+  }
+  .ant-drawer-footer {
+    padding: 0;
+    margin: 0 24px 24px;
+  }
+}
