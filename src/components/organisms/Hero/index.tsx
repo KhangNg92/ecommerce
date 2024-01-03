@@ -76,10 +76,10 @@ const Hero = () => {
           </button>
         </div>
         <div className='absolute z-50 hidden items-center gap-6 rounded-full bg-white p-6 drop-shadow-xl md:flex'>
-          {offers.map((item) => (
-            <>
+          {offers.map((item, idx) => (
+            <div key={`item-${idx}`}>
               {item?.name ? (
-                <div>
+                <div key={`item-${idx}`}>
                   <p
                     className={`mb-[6px] text-base text-gray ${
                       item.highlight ? 'font-semibold' : 'font-normal'
@@ -95,7 +95,7 @@ const Hero = () => {
               ) : (
                 <span className='h-[46px] w-[0.77px] bg-gray opacity-50'></span>
               )}
-            </>
+            </div>
           ))}
           <button className='h-[46px] max-w-[200px] cursor-pointer rounded-[24px] border-[1.2px] border-solid border-black bg-transparent px-4 py-[6px]'>
             See More
