@@ -5,7 +5,7 @@
 
 An e-commerce application build with Next.js 14, antd, tailwind with admin section to manage products and checkout section using Stripe
 
-View the <a href = "https://e-shoes.herokuapp.com/">site</a>
+<!-- View the <a href = "https://e-shoes.herokuapp.com/">site</a> -->
 
 ## Technologies & Tools
 
