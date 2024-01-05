@@ -1,0 +1,30 @@
+.shop-filter-item {
+  .ant-radio-inner {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+
+    &::after {
+      width: 8px;
+      height: 12px;
+    }
+  }
+  .ant-radio,
+  .ant-checkbox {
+    font-size: 20px;
+  }
+
+  .ant-radio-wrapper,
+  .ant-checkbox-wrapper {
+    color: #6f767e;
+  }
+
+  .ant-radio-wrapper.ant-radio-wrapper-checked,
+  .ant-checkbox-wrapper.ant-checkbox-wrapper-checked {
+    color: #33383f;
+  }
+}

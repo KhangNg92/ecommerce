@@ -7,7 +7,6 @@ import '@/styles/custom-drawer.scss';
 
 import NextAuthProvider from '@/providers/NextAuthProvider';
 import ReactQueryProvider from '@/providers/QueryClientProvider';
-import ThemeAntDesign from '@/themes/ThemeAntDesign';
 import ThemeNext from '@/themes/ThemeNext';
 
 export const metadata = {
@@ -21,11 +20,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <NextAuthProvider>
           <ThemeNext>
-            <ThemeAntDesign>
-              <ReactQueryProvider>
-                <main>{children}</main>
-              </ReactQueryProvider>
-            </ThemeAntDesign>
+            {/* <ThemeAntDesign> */}
+            <ReactQueryProvider>
+              <main>{children}</main>
+            </ReactQueryProvider>
+            {/* </ThemeAntDesign> */}
           </ThemeNext>
         </NextAuthProvider>
       </body>
