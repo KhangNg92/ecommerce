@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 import HeroBg from '@/assets/images/bg-hero.png';
 
 const CustomSlider = () => {
-  const settings = {
+  const settings: any = {
     dots: true,
     infinite: true,
     speed: 500,

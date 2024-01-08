@@ -11,4 +11,5 @@ export const COLORS = {
   bgDarkGray: '#1F2224',
   textDark: '#F4F4F4',
   textDarkGray: '#EFEFEF',
+  title: '#111315',
 };
