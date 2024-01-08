@@ -107,7 +107,7 @@ const ShopFilterItem = (props: CheckboxFilterProps) => {
 
   return (
     <div className='shop-filter-item flex flex-col gap-4'>
-      <div className={clsx('text-title text-sm font-medium', classNameTitle)}>{title}</div>
+      <div className={clsx('text-sm font-medium text-title', classNameTitle)}>{title}</div>
       {renderContent()}
     </div>
   );

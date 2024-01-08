@@ -96,9 +96,9 @@ const Menu = () => {
         <button className='cursor-pointer border-0 bg-transparent p-0'>
           <SearchIcon />
         </button>
-        <button className='cursor-pointer border-0 bg-transparent p-0'>
+        <Link href={'/account/demo'} className='cursor-pointer border-0 bg-transparent p-0'>
           <ProfileIcon />
-        </button>
+        </Link>
         <button className='relative cursor-pointer border-0 bg-transparent p-0'>
           <CartIcon />
           <span className='absolute -top-2 left-[14px] z-[-1] flex h-5 w-5 items-center justify-center rounded-full bg-bgError text-xs font-bold text-white'>

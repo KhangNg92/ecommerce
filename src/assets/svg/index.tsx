@@ -531,26 +531,3 @@ export const StarIcon = () => (
     />
   </svg>
 );
-
-export const MinusIcon = () => (
-  <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
-    <path
-      d='M4.03711 10H15.7038'
-      stroke='#111315'
-      strokeWidth='0.9375'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-    />
-  </svg>
-);
-
-export const PlusIcon = () => (
-  <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
-    <path
-      fillRule='evenodd'
-      clipRule='evenodd'
-      d='M10.4691 4.16663C10.4691 3.90774 10.2592 3.69788 10.0003 3.69788C9.74144 3.69788 9.53158 3.90774 9.53158 4.16663V9.53121H4.16699C3.90811 9.53121 3.69824 9.74108 3.69824 9.99996C3.69824 10.2588 3.90811 10.4687 4.16699 10.4687H9.53158V15.8333C9.53158 16.0922 9.74144 16.302 10.0003 16.302C10.2592 16.302 10.4691 16.0922 10.4691 15.8333V10.4687H15.8337C16.0925 10.4687 16.3024 10.2588 16.3024 9.99996C16.3024 9.74108 16.0925 9.53121 15.8337 9.53121H10.4691V4.16663Z'
-      fill='#111315'
-    />
-  </svg>
-);
