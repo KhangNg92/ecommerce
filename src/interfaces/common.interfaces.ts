@@ -60,3 +60,9 @@ export interface GetCommonDataRequest<T = any> {
   skip?: number;
   take?: number;
 }
+
+export interface IDataSelect<T = any> {
+  label: string;
+  value: T;
+  id: string | number;
+}
