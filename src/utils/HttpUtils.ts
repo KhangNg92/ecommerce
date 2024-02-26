@@ -1,4 +1,3 @@
-import { signOut } from 'next-auth/react';
 import querystring from 'querystring';
 
 import { HttpMethod, StatusCode } from '@/common/enums';
@@ -56,7 +55,6 @@ export default class HttpUtils {
     } catch (error: any) {
       switch (error.code) {
         case StatusCode.Unauthorized:
-          signOut();
           break;
 
         default:

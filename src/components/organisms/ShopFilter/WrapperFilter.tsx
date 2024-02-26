@@ -14,7 +14,7 @@ export default function WrapperFilter(props: PropsWithChildren) {
     <>
       {/* for desktop */}
       <div className='hidden py-[60px] pl-[160px] md:block'>
-        <div className={'w-[300px]'}>{children}</div>
+        <div className={'w-[262px]'}>{children}</div>
       </div>
 
       {/* for mobile */}

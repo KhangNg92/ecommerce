@@ -82,7 +82,7 @@ const ShopFilterItem = (props: CheckboxFilterProps) => {
           <div className='mb-4 flex gap-2'>
             <InputNumber
               size='large'
-              className='flex-1'
+              className='flex-1 bg-white'
               placeholder='Min price'
               min={1}
               max={10000}
@@ -91,7 +91,7 @@ const ShopFilterItem = (props: CheckboxFilterProps) => {
             />
             <InputNumber
               size='large'
-              className='flex-1'
+              className='flex-1 bg-white'
               placeholder='Max price'
               min={1}
               max={10000}
@@ -107,7 +107,9 @@ const ShopFilterItem = (props: CheckboxFilterProps) => {
 
   return (
     <div className='shop-filter-item flex flex-col gap-4'>
-      <div className={clsx('text-title text-sm font-medium', classNameTitle)}>{title}</div>
+      <div className={clsx('text-sm font-medium text-title dark:text-white', classNameTitle)}>
+        {title}
+      </div>
       {renderContent()}
     </div>
   );

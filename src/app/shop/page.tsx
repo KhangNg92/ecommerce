@@ -3,6 +3,7 @@ import ShopCardList from '@/components/organisms/ShopCardList';
 import ShopFilter from '@/components/organisms/ShopFilter';
 
 export default function Shop() {
+  console.log('test');
   return (
     <div>
       <ShopBanner />

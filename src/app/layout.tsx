@@ -8,8 +8,7 @@ import '@/styles/custom-collapse.scss';
 
 import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
-import NextAuthProvider from '@/providers/NextAuthProvider';
-import ReactQueryProvider from '@/providers/QueryClientProvider';
+import ThemeAntDesign from '@/themes/ThemeAntDesign';
 import ThemeNext from '@/themes/ThemeNext';
 
 export const metadata = {
@@ -19,21 +18,17 @@ export const metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning={true}>
       <body>
-        <NextAuthProvider>
-          <ThemeNext>
-            {/* <ThemeAntDesign> */}
-            <ReactQueryProvider>
-              <main>
-                <Header />
-                {children}
-                <Footer />
-              </main>
-            </ReactQueryProvider>
-            {/* </ThemeAntDesign> */}
-          </ThemeNext>
-        </NextAuthProvider>
+        <ThemeNext>
+          <ThemeAntDesign>
+            <main>
+              <Header />
+              {children}
+              <Footer />
+            </main>
+          </ThemeAntDesign>
+        </ThemeNext>
       </body>
     </html>
   );

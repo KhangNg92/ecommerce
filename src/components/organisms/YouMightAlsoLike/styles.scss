@@ -1,0 +1,21 @@
+.you-might-also-like {
+  .link-more {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: #1f2224;
+      transition: width 0.3s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}
