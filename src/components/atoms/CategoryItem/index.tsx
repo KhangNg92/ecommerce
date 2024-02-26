@@ -26,7 +26,7 @@ const CategoryItem = ({
   return (
     <div
       className={clsx(
-        'relative flex flex-1 bg-bgWhiteGray',
+        'relative flex flex-1 bg-bgWhiteGray dark:bg-bgDarkGray',
         showFlexRow ? 'flex-row' : 'flex-col',
         mode === 'large' && 'p-6',
         mode === 'small' && 'items-end justify-between pl-8',
@@ -43,8 +43,8 @@ const CategoryItem = ({
       >
         <h2
           className={clsx(
-            'mb-3 text-[28px] font-medium tracking-[-0.6px] text-active md:text-[34px] md:leading-[38px]',
-            mode === 'icon' && 'mb-2 text-[17px] leading-[22px] md:text-[20px] md:leading-[28px]',
+            'mb-3 text-[28px] font-medium tracking-[-0.6px] text-active dark:text-textDarkGray md:text-[34px] md:leading-[38px]',
+            mode === 'icon' && 'mb-2 !text-[17px] leading-[22px] md:!text-[20px] md:leading-[28px]',
           )}
         >
           {title}
@@ -52,12 +52,12 @@ const CategoryItem = ({
         <Link
           href={href}
           className={clsx(
-            'inline-flex items-center gap-1 border-0 border-b-2 border-solid border-active text-base text-active',
-            mode === 'icon' && 'border-0 border-none text-gray underline',
+            'inline-flex items-center gap-1 border-0 border-b-2 border-solid border-active text-base text-active dark:border-white dark:text-white',
+            mode === 'icon' && 'border-0 border-none !text-gray underline dark:text-white',
           )}
         >
           Shop Now
-          <span className='hidden md:inline'>
+          <span className='hidden md:flex'>
             <ArrowBlackIcon />
           </span>
         </Link>
@@ -68,7 +68,7 @@ const CategoryItem = ({
             src={image}
             alt='image'
             className={clsx(
-              'max-h-[377px] w-full object-contain md:max-h-[590px]',
+              'h-auto max-h-[377px] w-full object-contain md:max-h-[590px]',
               mode === 'small' && 'max-h-[160px]',
             )}
           />

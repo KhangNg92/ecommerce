@@ -3,7 +3,9 @@ import clsx from 'clsx';
 import React from 'react';
 
 import { ArrowBlackIcon } from '@/assets/svg';
-import ProductItem from '@/components/atoms/ProductItem';
+import CardItem from '@/components/atoms/CardItem';
+
+import { tempData } from '../ShopCardList';
 
 const listNav = [
   {
@@ -28,46 +30,8 @@ const listNav = [
   },
 ];
 
-const listProductItem = [
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-50%',
-    rating: 5,
-  },
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-25%',
-    rating: 4,
-  },
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-40%',
-    rating: 3,
-  },
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-35%',
-    rating: 2,
-  },
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-45%',
-    rating: 5,
-  },
-  {
-    name: 'Table Lamp',
-    price: '24.99',
-    discount: '-45%',
-    rating: 5,
-  },
-];
-
 const Products = () => {
+  const DEFAULT_LIMIT = 7;
   const [nameNav, setNameNav] = React.useState(1);
 
   return (
@@ -80,16 +44,16 @@ const Products = () => {
           </h1>
         </div>
         <div className=' flex w-full items-center justify-between md:order-1 md:w-auto '>
-          <ul className='border-gray-100 bg-gray-50  mt-4 flex list-none  rounded-lg border p-0 font-medium md:mt-0  md:flex-row md:border-0 md:bg-white'>
+          <ul className='border-gray-100 bg-gray-50  mt-4 flex list-none  rounded-lg border p-0 font-medium md:mt-0  md:flex-row md:border-0 md:bg-white md:dark:bg-bgDark'>
             {listNav.map((nav, index) => {
               return (
                 <li
                   onClick={() => setNameNav(index)}
                   key={index}
                   className={clsx(
-                    'cursor-pointer rounded-full border-[1px] p-2 text-center text-[14px] text-gray hover:border-solid hover:text-bgDarkGray md:w-[100px] md:px-3 md:py-2',
+                    'cursor-pointer rounded-full border-[1px] p-2 text-center text-[14px] text-gray hover:border-solid hover:text-bgDarkGray hover:dark:text-white md:w-[100px] md:px-3 md:py-2',
                     nameNav === index &&
-                      'mx-2 rounded-full border-[1px] border-solid border-bgDarkGray p-2 text-center text-[14px] text-bgDarkGray md:w-[100px] md:px-3 md:py-2',
+                      'mx-2 rounded-full border-[1px] border-solid border-bgDarkGray p-2 text-center text-[14px] text-bgDarkGray dark:border-white dark:text-white md:w-[100px] md:px-3 md:py-2',
                   )}
                 >
                   <a>{nav.name}</a>
@@ -100,10 +64,10 @@ const Products = () => {
         </div>
       </div>
       <div className='mt-5 grid gap-4 md:grid-cols-4'>
-        {listProductItem.map((productCard, index) => {
+        {tempData.slice(0, DEFAULT_LIMIT).map((productCard, index) => {
           return (
             <div key={index}>
-              <ProductItem {...productCard} />
+              <CardItem data={productCard} />
             </div>
           );
         })}

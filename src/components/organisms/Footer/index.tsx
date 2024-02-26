@@ -8,22 +8,27 @@ import { YoutubeIcon } from '@/assets/svg/Youtube';
 const icons = [FacebookIcon, InstagramIcon, YoutubeIcon];
 const menus = [
   {
+    id: 1,
     href: '#',
     label: 'Home',
   },
   {
+    id: 2,
     href: '#',
     label: 'Categories',
   },
   {
+    id: 3,
     href: '#',
     label: 'Product',
   },
   {
+    id: 4,
     href: '#',
     label: 'Blog',
   },
   {
+    id: 5,
     href: '#',
     label: 'Contact Us',
   },
@@ -47,7 +52,7 @@ const Footer = () => {
           </div>
           <div className='relative mt-10 flex w-full flex-col items-center gap-8 md:mt-0 md:w-[unset] md:flex-row md:items-start md:gap-[40px]'>
             {menus.map((m) => (
-              <Link key={m.href} href={'#'}>
+              <Link key={m.id} href={'#'}>
                 <div className='relative mt-[-1.00px] w-fit whitespace-nowrap font-normal text-white'>
                   {m.label}
                 </div>

@@ -28,3 +28,11 @@
 .slick-prev, .slick-next {
   display: none !important;
 }
+
+.react-slideshow-container+ul.indicators {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1rem !important;
+  margin: 0;
+  padding: 0;
+}

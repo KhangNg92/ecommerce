@@ -83,7 +83,9 @@ const ContentProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   const DEFAULT_REVIEW_LIMIT = 3;
   const [limitReview, setLimitReview] = useState(DEFAULT_REVIEW_LIMIT);
-  const onChange = () => {};
+  const onChange = (key: string | string[]) => {
+    console.log(key);
+  };
 
   useEffect(() => {
     setQuantity(data.quantity);
@@ -118,15 +120,17 @@ const ContentProductDetails = () => {
         </div>
       ),
       children: (
-        <div className='py-6'>
+        <div className='pt-6'>
           <Select
             className='w-full'
             defaultValue='newest'
             size='large'
-            onChange={() => {}}
+            onChange={(val) => {
+              console.log(val);
+            }}
             options={[{ value: 'newest', label: 'Newest' }]}
           />
-          <div className='flex flex-col gap-6 py-6'>
+          <div className='flex flex-col gap-6 pt-6'>
             {data.review.users.slice(0, limitReview).map((item) => (
               <div
                 key={item?.id}
@@ -191,7 +195,7 @@ const ContentProductDetails = () => {
         </h1>
         <p className='m-0 text-base text-gray'>{data.description}</p>
         <div className='flex items-center gap-3'>
-          <span className='text-title text-[28px] font-medium leading-[34px] tracking-[-0.6px]'>
+          <span className='text-[28px] font-medium leading-[34px] tracking-[-0.6px] text-title'>
             {data.price_discount}
           </span>
           <span className='text-xl font-medium text-gray line-through'>{data.price}</span>
@@ -238,7 +242,7 @@ const ContentProductDetails = () => {
             >
               <MinusIcon />
             </button>
-            <span className='text-title min-w-[20px] text-center text-base'>{quantity}</span>
+            <span className='min-w-[20px] text-center text-base text-title'>{quantity}</span>
             <button
               onClick={() => setQuantity(quantity + 1)}
               className='flex cursor-pointer items-center justify-center border-0 bg-transparent p-0'

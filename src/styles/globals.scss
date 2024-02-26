@@ -44,3 +44,23 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.step {
+  @apply w-10 h-10 mr-[17px] flex items-center justify-center z-10 relative rounded-full font-semibold text-white;
+}
+.active .step {
+  @apply bg-[#1F2224];
+}
+.complete .step {
+  @apply bg-[#83BF6E];
+}
+.complete p {
+  @apply text-white;
+}
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+  @apply bg-green-600;
+}
+.border-b-1 {
+  border-bottom: 1px solid #1f2224;
+}
